@@ -7,4 +7,5 @@ public class Main {
         CSVReader.readInFile("EmployeeRecords.csv");
         System.out.println(CSVReader.getReadArray().toString());
     }
+
 }
