@@ -9,6 +9,8 @@ public class FirstName {
             return false;
         }
     }
-    public
+    public static String convertData(String firstName) {
+        return firstName;
+    }
 
 }

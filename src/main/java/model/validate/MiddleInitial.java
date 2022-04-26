@@ -14,4 +14,7 @@ public class MiddleInitial {
             return false;
         }
     }
+    public static String convertData(String gender) {
+        return gender;
+    }
 }

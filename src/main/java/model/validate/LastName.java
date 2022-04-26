@@ -8,4 +8,7 @@ public class LastName {
                 return false;
             }
         }
+    public static String convertData(String lastName) {
+        return lastName;
+    }
 }
