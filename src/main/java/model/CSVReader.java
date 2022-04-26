@@ -6,7 +6,7 @@ import java.awt.*;
 import java.io.*;
 import java.util.ArrayList;
 
-public abstract class CSVReader {
+public class CSVReader {
     private static ArrayList<String> readArray = null;
 
     public static ArrayList<String> getReadArray() {

@@ -8,8 +8,9 @@ class MiddleInitialTest {
 
     @Test
     void validateData() {
-        boolean actual = MiddleInitial.validate
     }
 
-
+    @Test
+    void convertData() {
+    }
 }
