@@ -4,17 +4,17 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class MiddleInitial {
-    public boolean validateData(String gender){
+    public boolean validateData(String middleInitial){
         String regex = "[A-Z]";
         Pattern p = Pattern.compile(regex);
-        Matcher m = p.matcher(gender);
+        Matcher m = p.matcher(middleInitial);
         if(m.matches()){
             return true;
         } else{
             return false;
         }
     }
-    public static String convertData(String gender) {
-        return gender;
+    public static String convertData(String middleInitial) {
+        return middleInitial;
     }
 }
