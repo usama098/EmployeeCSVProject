@@ -35,7 +35,7 @@ public class StringSplitter {
     public static String lines(ArrayList<String> readArrayList){
         for (int counter = 0; counter < readArrayList.size(); counter++){
 
-            System.out.println(line[0]);
+            //System.out.println(line[0]);
         }
         return null;
     }

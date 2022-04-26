@@ -15,7 +15,7 @@ import java.text.SimpleDateFormat;
  */
 
 public abstract class DateOf implements ValidateData {
-    public boolean validateData(String dateOfBirth){
+    public static boolean validateData(String dateOfBirth){
         boolean isValid;
         SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
         java.util.Date d = null;
