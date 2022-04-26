@@ -1,7 +1,17 @@
 package model.validate;
 
-public class Gender {
-    public boolean validateData(String empID){
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
+public class Gender {
+    public boolean validateData(String gender){
+        String regex = "M|F";
+        Pattern p = Pattern.compile(regex);
+        Matcher m = p.matcher(gender);
+        if(m.matches()){
+            return true;
+        } else{
+            return false;
+        }
     }
 }
