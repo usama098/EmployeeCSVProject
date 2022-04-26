@@ -2,7 +2,7 @@ package model;
 
 import java.sql.Date;
 
-public class Data {
+public class Employee {
     private String employerID;
     private String namePrefix;
     private String firstName;
@@ -95,7 +95,7 @@ public class Data {
     }
 
 
-    public Data(String employerID, String namePrefix, String firstName, char middleInitial, String lastName, boolean gender, String email, Date dateOfBirth, Date dateOfJoin, int salary) {
+    public Employee(String employerID, String namePrefix, String firstName, char middleInitial, String lastName, boolean gender, String email, Date dateOfBirth, Date dateOfJoin, int salary) {
         this.employerID = employerID;
         this.namePrefix = namePrefix;
         this.firstName = firstName;

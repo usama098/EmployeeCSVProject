@@ -1,5 +1,7 @@
 package model;
 
+import util.LoggingClass;
+
 import java.awt.*;
 import java.io.*;
 import java.util.ArrayList;
@@ -22,10 +24,15 @@ public abstract class CSVReader {
             readArray = new ArrayList<String>();
             while((line = reader.readLine()) != null){
                 String[] row = line.split(",");
+
+                //start validating data from the row string array
+                //call the constructor here to create an employee class instance
+                //edit three arraylists: 1 employee arraylist<data is all fine>, dublicates<dublicated id of employee> 3. corrupted data<>
                 readArray.add(line);
             }
 
         }catch (Exception e){
+            LoggingClass.traceLog("employees.csv file read");
             e.printStackTrace();
         }finally {
             try {

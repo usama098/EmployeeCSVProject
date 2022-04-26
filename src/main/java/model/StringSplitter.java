@@ -1,8 +1,11 @@
 package model;
 
+import java.awt.*;
+import java.util.ArrayList;
+
 public class StringSplitter {
     // how an element from ArrayList looks like:
-    // 173003,Mrs.,Willia,Q,Weigand,F,willia.weigand@gmail.com,10/20/1960,7/30/2005,158292, 133641,Mr.,Chas,F,Hurdle,M,chas.hurdle@gmail.com,4/20/1995,5/28/2016,45102
+    // 173003,Mrs.,Willia,Q,Weigand,F,willia.weigand@gmail.com,10/20/1960,7/30/2005,158292,
 
     /*
     1) the function gonna ask for the array
@@ -24,4 +27,16 @@ public class StringSplitter {
     5) if every line is good, then we going to create a Data instance [passing on the data types]
 
      */
+    public static void main (String args[]){
+        CSVReader.readInFile("EmployeeRecords.csv");
+        //System.out.println(CSVReader.getReadArray());
+        lines(CSVReader.getReadArray());
+    }
+    public static String lines(ArrayList<String> readArrayList){
+        for (int counter = 0; counter < readArrayList.size(); counter++){
+
+            System.out.println(line[0]);
+        }
+        return null;
+    }
 }

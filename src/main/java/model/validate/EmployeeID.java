@@ -17,7 +17,7 @@ public abstract class EmployeeID implements ValidateData {
         return true;
     }
 
-    public static String validateEmployeeID(String empID) {
+    public static String convertData(String empID) {
         return empID;
     }
 }
