@@ -47,7 +47,7 @@ public class CSVReader {
                                 break;
                             case 2:
                             case 4:
-                                if ( !Name.validateData(columns[i]) ) {
+                                if ( !FisrtName.validateData(columns[i]) ) {
                                     isValid = false;
                                 }
                                 break;
