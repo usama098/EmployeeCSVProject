@@ -14,10 +14,17 @@ class EmailAddressTest {
         assertEquals(true, emailAddress.validateData("usama.navid@gmail.com"));
     }
 
-    @DisplayName("Enter wrong email format")
+    @DisplayName("Enter wrong email format without @")
     @Test
     void wrongValidatedData() {
         EmailAddress emailAddress = new EmailAddress();
         assertEquals(false, emailAddress.validateData("usama.navidgmail.com"));
+    }
+
+    @DisplayName("Enter wrong email format without @ & .")
+    @Test
+    void wrongValidatedDataTwo() {
+        EmailAddress emailAddress = new EmailAddress();
+        assertEquals(false, emailAddress.validateData("usama.navidgmailcom"));
     }
 }

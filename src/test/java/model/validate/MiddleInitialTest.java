@@ -8,7 +8,7 @@ class MiddleInitialTest {
 
     @Test
     void validateData() {
-        boolean actual = MiddleInitial.validate
+        boolean actual = MiddleInitial.validateData();
     }
 
 
