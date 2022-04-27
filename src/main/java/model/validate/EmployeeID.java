@@ -1,6 +1,6 @@
 package model.validate;
 
-public abstract class EmployeeID implements ValidateData {
+public class EmployeeID {
     public static boolean validateData(String empID){
         if (empID.length() != 6) {
             return false;

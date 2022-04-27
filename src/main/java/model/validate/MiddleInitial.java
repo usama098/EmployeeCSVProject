@@ -3,8 +3,8 @@ package model.validate;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public abstract class MiddleInitial implements ValidateData {
-    public boolean validateData(String middleInitial){
+public class MiddleInitial{
+    public static boolean validateData(String middleInitial){
         String regex = "[A-Z]";
         Pattern p = Pattern.compile(regex);
         Matcher m = p.matcher(middleInitial);

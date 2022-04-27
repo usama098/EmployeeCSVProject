@@ -2,8 +2,7 @@ package model.validate;
 
 import java.util.regex.Pattern;
 
-public abstract class Salary implements ValidateData {
-
+public class Salary {
     public static boolean validateData(String salary){
         Pattern salaryPattern = Pattern.compile("\\d+");
         if (salary == null) {

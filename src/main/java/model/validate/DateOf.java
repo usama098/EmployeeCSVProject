@@ -14,7 +14,7 @@ import java.text.SimpleDateFormat;
         https://dev.mysql.com/doc/refman/8.0/en/datetime.html
  */
 
-public abstract class DateOf implements ValidateData {
+public class DateOf {
     public static boolean validateData(String dateOfBirth){
         boolean isValid;
         SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
