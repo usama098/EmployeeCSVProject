@@ -1,18 +1,16 @@
 package model;
 
-import java.sql.Date;
-
-public class Employee {
+public class CorruptedEmployee {
     private String employerID;
     private String namePrefix;
     private String firstName;
     private String middleInitial;
     private String lastName;
-    private boolean gender; // Male = 0, female = 1
+    private String gender;
     private String email;
-    private Date dateOfBirth;
-    private Date dateOfJoin;
-    private int salary;
+    private String dateOfBirth;
+    private String dateOfJoin;
+    private String salary;
 
     public String getEmployerID() {
         return employerID;
@@ -54,11 +52,11 @@ public class Employee {
         this.lastName = lastName;
     }
 
-    public boolean isGender() {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(boolean gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
@@ -70,32 +68,31 @@ public class Employee {
         this.email = email;
     }
 
-    public Date getDateOfBirth() {
+    public String getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
+    public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public Date getDateOfJoin() {
+    public String getDateOfJoin() {
         return dateOfJoin;
     }
 
-    public void setDateOfJoin(Date dateOfJoin) {
+    public void setDateOfJoin(String dateOfJoin) {
         this.dateOfJoin = dateOfJoin;
     }
 
-    public int getSalary() {
+    public String getSalary() {
         return salary;
     }
 
-    public void setSalary(int salary) {
+    public void setSalary(String salary) {
         this.salary = salary;
     }
 
-
-    public Employee(String employerID, String namePrefix, String firstName, String middleInitial, String lastName, boolean gender, String email, Date dateOfBirth, Date dateOfJoin, int salary) {
+    public CorruptedEmployee(String employerID, String namePrefix, String firstName, String middleInitial, String lastName, String gender, String email, String dateOfBirth, String dateOfJoin, String salary) {
         this.employerID = employerID;
         this.namePrefix = namePrefix;
         this.firstName = firstName;
@@ -107,5 +104,4 @@ public class Employee {
         this.dateOfJoin = dateOfJoin;
         this.salary = salary;
     }
-
 }

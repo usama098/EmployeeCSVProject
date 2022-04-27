@@ -14,7 +14,13 @@ public class Gender {
             return false;
         }
     }
-    public static String convertData(String gender) {
-        return gender;
+
+    // Male = 0, female = 1
+    public static boolean convertData(String gender) {
+        if (gender.equals("M")) {
+            return false;
+        } else {
+            return true;
+        }
     }
 }
